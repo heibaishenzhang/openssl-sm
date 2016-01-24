@@ -1,0 +1,1 @@
+link ../../crypto/sm4/sm4.h
