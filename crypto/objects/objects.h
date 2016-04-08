@@ -92,6 +92,12 @@
 #  define NID_md5                         4
 #  define OBJ_md5                         OBJ_rsadsi,2L,5L
 
+/*sm3*/
+#  define SN_sm3                         "SM3"
+#  define LN_sm3                         "sm3"
+#  define NID_sm3                        964
+#  define OBJ_sm3                        OBJ_rsadsi,2L,12L
+
 #  define SN_rc4                          "RC4"
 #  define LN_rc4                          "rc4"
 #  define NID_rc4                         5
@@ -964,19 +970,14 @@
 #  define SN_SM2                          "SM2"
 #  define LN_SM2                          "sm2"
 #  define NID_SM2                         181
-#  define OBJ_SM2                         1L, 3L, 132L, 0L, 103L  
+#  define OBJ_SM2                         1L, 3L, 132L, 0L, 103L
 
-/*sm3*/
-#  define SN_SM3                         "SM3"
-#  define LN_SM3                         "sm3"
-#  define NID_SM3                        182
-#  define OBJ_SM3                        1L, 2L, 156L, 10197L, 1L, 501L  
 
 /*sm4*/
 #  define SN_SM4                         "SM4"
 #  define LN_SM4                         "sm4"
 #  define NID_SM4                        183
-#  define OBJ_SM4                        1L, 3L, 6L, 1L, 4L, 1L, 3030L, 1L, 1  
+#  define OBJ_SM4                        1L, 3L, 6L, 1L, 4L, 1L, 3030L, 1L, 1
 # endif                         /* USE_OBJ_MAC */
 
 # include <openssl/bio.h>

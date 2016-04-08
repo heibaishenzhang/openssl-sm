@@ -69,6 +69,8 @@ unsigned char *MD5(const unsigned char *d, size_t n, unsigned char *md)
 {
     MD5_CTX c;
     static unsigned char m[MD5_DIGEST_LENGTH];
+    
+    printf("md5-->running here, n=%d\n", n);
 
     if (md == NULL)
         md = m;

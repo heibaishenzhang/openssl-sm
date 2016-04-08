@@ -1,1 +1,1 @@
-link ../../crypto/sm3/sm3.h
+../../crypto/sm3/sm3.h

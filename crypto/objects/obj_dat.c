@@ -423,6 +423,7 @@ int OBJ_obj2nid(const ASN1_OBJECT *a)
     if (added != NULL) {
         ad.type = ADDED_DATA;
         ad.obj = (ASN1_OBJECT *)a; /* XXX: ugly but harmless */
+        printf("%s:%d sn=%d, ln=%s\n", __FUNCTION__, __LINE__, a->sn, a->ln);
         adp = lh_ADDED_OBJ_retrieve(added, &ad);
         if (adp != NULL)
             return (adp->obj->nid);

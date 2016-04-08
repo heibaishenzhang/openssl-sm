@@ -2527,10 +2527,10 @@ static const ASN1_OBJECT nid_objs[NUM_NID]={
 {"sm2p256v1","sm2p256v1",NID_sm2p256v1,8,&(lvalues[6269]),0},
 {"sm2p256v2","sm2p256v2",NID_sm2p256v2,5,&(lvalues[6277]),0},
 {"sm2t257v1","sm2t257v1",NID_sm2t257v1,5,&(lvalues[6282]),0},
+{NULL,NULL,NID_undef,0,NULL,0},
 {"SM3","sm3",NID_sm3,8,&(lvalues[6287]),0},
 {"SM2-SM3","sm2Withsm3",NID_sm2Withsm3,8,&(lvalues[6295]),0},
 {"hmacWithSM3","hmacWithSM3",NID_hmacWithSM3,8,&(lvalues[6303]),0},
-{NULL,NULL,NID_undef,0,NULL,0},
 };
 
 static const unsigned int sn_objs[NUM_SN]={

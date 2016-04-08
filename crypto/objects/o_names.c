@@ -165,13 +165,18 @@ const char *OBJ_NAME_get(const char *name, int type)
 
     for (;;) {
         ret = lh_OBJ_NAME_retrieve(names_lh, &on);
-        if (ret == NULL)
+        if (ret == NULL) {
+            printf("%s:%d, can't find the name=%s, type=%0x\n", __FUNCTION__, __LINE__, on.name, on.type);
             return (NULL);
+        }
         if ((ret->alias) && !alias) {
-            if (++num > 10)
+            if (++num > 10) {
+                printf("%s:%d, name=%s, type=%0x\n", __FUNCTION__, __LINE__, on.name, on.type);
                 return (NULL);
+            }
             on.name = ret->data;
         } else {
+            printf("%s:%d, name=%s, type=%0x\n", __FUNCTION__, __LINE__, on.name, on.type);
             return (ret->data);
         }
     }
